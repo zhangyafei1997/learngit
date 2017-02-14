@@ -1,0 +1,4 @@
+圣杯布局：
+由id分别为header，container，footer的三个div构成，container又包含id分别为center，left，right的三个div。给container加上padding-left和padding-right,向左浮动，center的宽度设为100%，给left加上marging-left:-100%,它超出了container这个div从而跑到上面又因为是100%，到center的最左端，再用相对定位，加上right使它占据padding-left的位置，同理设置right，不过right也可加上负的margin-right来占据padding-right的位置。
+双飞翼布局：
+不再用padding和相对定位而是在id为center的div内部再加一个id为inner的div，并给inner设置左右外边距，相当于代替了圣杯布局中container的左右内边距。其余相同。
